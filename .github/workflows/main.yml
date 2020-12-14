@@ -39,7 +39,7 @@ jobs:
             --region ap-south-1 \
             ./dist s3://mauna-testing
 
-       - name: Invalidate cache                                                                                                                                                                  
+      - name: Invalidate cache                                                                                                                                                                  
         run: |                                                                                                                                                                                  
           aws cloudfront create-invalidation \                                                                                                                                                  
             --distribution-id  E3GZCDZBE00UKO \ 
