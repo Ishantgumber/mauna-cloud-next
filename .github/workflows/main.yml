@@ -2,7 +2,7 @@ name: S3 Deploy
 on:
   push:
     branches:
-      - main
+      - maiin
 
 jobs:
   build:
@@ -23,8 +23,6 @@ jobs:
       - name: Install
         run: npm install
 
-      - name: Test
-        run: npm run test
 
       - name: Build
         run: npm run build
@@ -36,5 +34,5 @@ jobs:
         run: |
           aws s3 cp \
             --recursive \
-            --region ap-northeast-2 \
+            --region ap-south-1 \
             ./out s3://mauna-testing
