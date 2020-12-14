@@ -28,7 +28,7 @@ jobs:
       run: |
         yarn test
     - name: Deploy to S3
-      uses: shanu150795/mauna-cloud-next@main
+      uses: jakejarvis/s3-sync-action@master
       with:
         args: --acl public-read --delete
       env:
