@@ -36,8 +36,8 @@ jobs:
         run: |
           aws s3 cp \
             --recursive \
-            --region ap-northeast-2 \
-             s3://[mauna-testing]
+            --region ap-south-1 \
+             s3://mauna-testing
 
 
 
