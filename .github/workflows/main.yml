@@ -37,7 +37,7 @@ jobs:
           aws s3 cp \
             --recursive \
             --region ap-northeast-2 \
-            dist s3://[mauna-testing]
+            ./dist s3://[mauna-testing]
 
 
 
